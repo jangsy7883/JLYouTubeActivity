@@ -8,7 +8,7 @@
 
 #import "KMYoutubeActivity.h"
 
-//static NSString *YoutubeBaseURL = @"youtube://";
+static NSString *YoutubeURLSchema = @"youtube://";
 static NSString *YoutubeBaseURL = @"http://www.youtube.com/v/";
 
 @implementation KMYoutubeActivity
@@ -40,13 +40,14 @@ static NSString *YoutubeBaseURL = @"http://www.youtube.com/v/";
 
 - (BOOL)canPerformWithActivityItems:(NSArray *)activityItems
 {
-    if ([[UIApplication sharedApplication] canOpenURL:[NSURL URLWithString:YoutubeBaseURL]] == YES)
+    if ([[UIApplication sharedApplication] canOpenURL:[NSURL URLWithString:YoutubeURLSchema]] == YES)
     {
         for (id activityItem in activityItems)
         {
             return [self isYouTubeURL:activityItem];
         }
     }
+    
     return NO;
 }
 
@@ -77,14 +78,11 @@ static NSString *YoutubeBaseURL = @"http://www.youtube.com/v/";
 {
     if ([url isKindOfClass:[NSURL class]])
     {
-        NSURLComponents *components = [NSURLComponents componentsWithString:[url absoluteString]];
+        NSDictionary *parameters = [self queryParametersForURL:url];
         
-        for(NSURLQueryItem *item in components.queryItems)
+        if (parameters[@"v"] != nil)
         {
-            if([item.name isEqualToString:@"v"])
-            {
-                return item.value;
-            }
+            return parameters[@"v"];
         }
     }
     return nil;
@@ -94,18 +92,26 @@ static NSString *YoutubeBaseURL = @"http://www.youtube.com/v/";
 {
     if ([url isKindOfClass:[NSURL class]])
     {
-        NSURLComponents *components = [NSURLComponents componentsWithString:[url absoluteString]];
+        NSDictionary *parameters = [self queryParametersForURL:url];
         
-        for(NSURLQueryItem *item in components.queryItems)
+        if ([parameters[@"feature"] isEqualToString:@"youtu.be"])
         {
-            if([item.name isEqualToString:@"feature"] && [item.value isEqualToString:@"youtu.be"])
-            {
-                return YES;
-            }
+            return YES;
         }
     }
     return NO;
 }
 
-@end
+- (NSDictionary*)queryParametersForURL:(NSURL*)url
+{
+    NSMutableDictionary *params = [[NSMutableDictionary alloc] init];
+    for (NSString *param in [[url query] componentsSeparatedByString:@"&"])
+    {
+        NSArray *parts = [param componentsSeparatedByString:@"="];
+        if([parts count] < 2) continue;
+        [params setObject:[parts objectAtIndex:1] forKey:[parts objectAtIndex:0]];
+    }
+    return params;
+}
 
+@end
