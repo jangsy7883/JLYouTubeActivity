@@ -7,17 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F3EA7701C1D232B002FB8C3 /* KMYoutubeActivity.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 0F3EA76F1C1D232B002FB8C3 /* KMYoutubeActivity.podspec */; };
 		0F5399CF1BD7C39900D95306 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F5399CE1BD7C39900D95306 /* main.m */; };
 		0F5399D21BD7C39900D95306 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F5399D11BD7C39900D95306 /* AppDelegate.m */; };
 		0F5399D51BD7C39900D95306 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F5399D41BD7C39900D95306 /* ViewController.m */; };
 		0F5399D81BD7C39900D95306 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F5399D61BD7C39900D95306 /* Main.storyboard */; };
 		0F5399DA1BD7C39900D95306 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0F5399D91BD7C39900D95306 /* Assets.xcassets */; };
 		0F5399DD1BD7C39900D95306 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F5399DB1BD7C39900D95306 /* LaunchScreen.storyboard */; };
-		0F5399FC1BD7C3E900D95306 /* KMYoutubeActivity.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F5399F11BD7C3E900D95306 /* KMYoutubeActivity.m */; settings = {ASSET_TAGS = (); }; };
-		0F5399FE1BD7CE6000D95306 /* KMYouTubeActivity.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0F5399FD1BD7CE6000D95306 /* KMYouTubeActivity.bundle */; settings = {ASSET_TAGS = (); }; };
+		0F5399FC1BD7C3E900D95306 /* KMYoutubeActivity.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F5399F11BD7C3E900D95306 /* KMYoutubeActivity.m */; };
+		0F5399FE1BD7CE6000D95306 /* KMYouTubeActivity.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0F5399FD1BD7CE6000D95306 /* KMYouTubeActivity.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0F3EA76F1C1D232B002FB8C3 /* KMYoutubeActivity.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = KMYoutubeActivity.podspec; path = ../KMYoutubeActivity.podspec; sourceTree = "<group>"; };
 		0F5399CA1BD7C39900D95306 /* KMYoutubeActivityDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KMYoutubeActivityDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F5399CE1BD7C39900D95306 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0F5399D01BD7C39900D95306 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -47,6 +49,7 @@
 		0F5399C11BD7C39900D95306 = {
 			isa = PBXGroup;
 			children = (
+				0F3EA76F1C1D232B002FB8C3 /* KMYoutubeActivity.podspec */,
 				0F5399E41BD7C3E900D95306 /* KMYoutubeActivity */,
 				0F5399CC1BD7C39900D95306 /* KMYoutubeActivityDemo */,
 				0F5399CB1BD7C39900D95306 /* Products */,
@@ -153,6 +156,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F3EA7701C1D232B002FB8C3 /* KMYoutubeActivity.podspec in Resources */,
 				0F5399DD1BD7C39900D95306 /* LaunchScreen.storyboard in Resources */,
 				0F5399FE1BD7CE6000D95306 /* KMYouTubeActivity.bundle in Resources */,
 				0F5399DA1BD7C39900D95306 /* Assets.xcassets in Resources */,
@@ -319,6 +323,7 @@
 				0F5399E31BD7C39900D95306 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
