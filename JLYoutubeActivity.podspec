@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "JLYoutubeActivity"
-  s.version      = 1.1
+  s.version      = "1.1"
   s.summary      = "JLYoutubeActivity"
   s.homepage     = "https://github.com/jangsy7883/JLYoutubeActivity"
   s.license      = { :type => 'MIT', :file => 'LICENSE' }
