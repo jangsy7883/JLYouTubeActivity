@@ -18,10 +18,6 @@ pod install
 
 ## Usage
 
-*(See example Xcode project)*
-
-Simply `alloc`/`init` an instance of `TUSafariActivity` and pass that object into the applicationActivities array when creating a `UIActivityViewController`.
-
 ### Objective-C
 
 ```objectivec
