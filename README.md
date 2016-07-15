@@ -21,7 +21,7 @@ pod install
 ### Objective-C
 
 ```objectivec
-NSURL *URL = [NSURL URLWithString:@"https://youtu.be/_NMQl74qrR8""];
+NSURL *URL = [NSURL URLWithString:@"https://youtu.be/_NMQl74qrR8"];
 
 JLYoutubeActivity *activity = [[JLYoutubeActivity alloc] init];
 UIActivityViewController *activityViewController = [[UIActivityViewController alloc] initWithActivityItems:@[URL] applicationActivities::@[activity]];
