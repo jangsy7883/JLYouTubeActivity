@@ -26,7 +26,9 @@ Simply `alloc`/`init` an instance of `TUSafariActivity` and pass that object int
 
 ```objectivec
 NSURL *URL = [NSURL URLWithString:@"https://youtu.be/_NMQl74qrR8""];
-UIActivityViewController *activityViewController = [[UIActivityViewController alloc] initWithActivityItems:@[URL] applicationActivities::@[[JLYoutubeActivity new]]];
+
+JLYoutubeActivity *activity = [[JLYoutubeActivity alloc] init];
+UIActivityViewController *activityViewController = [[UIActivityViewController alloc] initWithActivityItems:@[URL] applicationActivities::@[activity]];
 ```
 
 ##Licence 
