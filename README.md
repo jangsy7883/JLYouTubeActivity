@@ -6,6 +6,8 @@
 
 `JLYouTubeActivity` is a `UIActivity` subclass that provides an "YouTube" action to a `UIActivityViewController`.
 
+![JLYouTubeActivity screenshot](https://github.com/jangsy7883/JLYouTubeActivity/blob/master/ScreenShots/1.png?raw=true "JLYouTubeActivity screenshot")
+
 ##Installation
 JLYouTubeActivity is available on CocoaPods. Add to your Podfile:
 ```bash
