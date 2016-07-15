@@ -1,5 +1,5 @@
 //
-//  KMYoutubeActivity.h
+//  JLYoutubeActivity.h
 //  onekm
 //
 //  Created by IM049 on 2015. 10. 21..
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface KMYoutubeActivity : UIActivity
+@interface JLYoutubeActivity : UIActivity
 
 @end

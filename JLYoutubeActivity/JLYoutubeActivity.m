@@ -1,17 +1,17 @@
 //
-//  KMYoutubeActivity.m
+//  JLYoutubeActivity.m
 //  onekm
 //
 //  Created by IM049 on 2015. 10. 21..
 //  Copyright © 2015년 ces. All rights reserved.
 //
 
-#import "KMYoutubeActivity.h"
+#import "JLYoutubeActivity.h"
 
 static NSString *YoutubeURLSchema = @"youtube://";
-static NSString *YoutubeBaseURL = @"http://www.youtube.com/v/";
-
-@implementation KMYoutubeActivity
+//static NSString *YoutubeBaseURL = @"http://www.youtube.com/v/";
+static NSString *YoutubeBaseURL = @"youtube://watch?v=";
+@implementation JLYoutubeActivity
 {
     NSURL *_URL;
 }
@@ -30,11 +30,11 @@ static NSString *YoutubeBaseURL = @"http://www.youtube.com/v/";
 {
     if ([UIImage respondsToSelector:@selector(imageNamed:inBundle:compatibleWithTraitCollection:)])
     {
-        return [UIImage imageNamed:@"KMYouTubeActivity.bundle/youtube" inBundle:[NSBundle bundleForClass:self.class] compatibleWithTraitCollection:nil];
+        return [UIImage imageNamed:@"JLYoutubeActivity.bundle/youtube" inBundle:[NSBundle bundleForClass:self.class] compatibleWithTraitCollection:nil];
     }
     else
     {
-        return [UIImage imageNamed:@"KMYouTubeActivity.bundle/youtube-7"];
+        return [UIImage imageNamed:@"JLYoutubeActivity.bundle/youtube-7"];
     }
 }
 
@@ -70,6 +70,21 @@ static NSString *YoutubeBaseURL = @"http://www.youtube.com/v/";
 
 - (void)performActivity
 {
+    /*
+    if ([[UIApplication sharedApplication] respondsToSelector:@selector(openURL:options:completionHandler:)])
+    {
+        [[UIApplication sharedApplication] openURL:_URL
+                                           options:@{}
+                                 completionHandler:^(BOOL success) {
+                                     [self activityDidFinish:success];
+                                 }];
+    }
+    else
+    {
+        BOOL completed = [[UIApplication sharedApplication] openURL:_URL];
+        [self activityDidFinish:completed];
+    }
+     */
     BOOL completed = [[UIApplication sharedApplication] openURL:_URL];
     [self activityDidFinish:completed];
 }

@@ -7,20 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0F3EA7701C1D232B002FB8C3 /* KMYoutubeActivity.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 0F3EA76F1C1D232B002FB8C3 /* KMYoutubeActivity.podspec */; };
 		0F5399CF1BD7C39900D95306 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F5399CE1BD7C39900D95306 /* main.m */; };
 		0F5399D21BD7C39900D95306 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F5399D11BD7C39900D95306 /* AppDelegate.m */; };
 		0F5399D51BD7C39900D95306 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F5399D41BD7C39900D95306 /* ViewController.m */; };
 		0F5399D81BD7C39900D95306 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F5399D61BD7C39900D95306 /* Main.storyboard */; };
 		0F5399DA1BD7C39900D95306 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0F5399D91BD7C39900D95306 /* Assets.xcassets */; };
 		0F5399DD1BD7C39900D95306 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F5399DB1BD7C39900D95306 /* LaunchScreen.storyboard */; };
-		0F5399FC1BD7C3E900D95306 /* KMYoutubeActivity.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F5399F11BD7C3E900D95306 /* KMYoutubeActivity.m */; };
-		0F5399FE1BD7CE6000D95306 /* KMYouTubeActivity.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0F5399FD1BD7CE6000D95306 /* KMYouTubeActivity.bundle */; };
+		0F5399FC1BD7C3E900D95306 /* JLYoutubeActivity.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F5399F11BD7C3E900D95306 /* JLYoutubeActivity.m */; };
+		0F5399FE1BD7CE6000D95306 /* JLYoutubeActivity.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0F5399FD1BD7CE6000D95306 /* JLYoutubeActivity.bundle */; };
+		7ED85B071D3870F70066AF95 /* JLYoutubeActivity.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 7ED85B061D3870F70066AF95 /* JLYoutubeActivity.podspec */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0F3EA76F1C1D232B002FB8C3 /* KMYoutubeActivity.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = KMYoutubeActivity.podspec; path = ../KMYoutubeActivity.podspec; sourceTree = "<group>"; };
-		0F5399CA1BD7C39900D95306 /* KMYoutubeActivityDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KMYoutubeActivityDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0F5399CA1BD7C39900D95306 /* JLYoutubeActivityDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JLYoutubeActivityDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F5399CE1BD7C39900D95306 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0F5399D01BD7C39900D95306 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		0F5399D11BD7C39900D95306 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -30,9 +29,10 @@
 		0F5399D91BD7C39900D95306 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0F5399DC1BD7C39900D95306 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0F5399DE1BD7C39900D95306 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0F5399F01BD7C3E900D95306 /* KMYoutubeActivity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KMYoutubeActivity.h; sourceTree = "<group>"; };
-		0F5399F11BD7C3E900D95306 /* KMYoutubeActivity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KMYoutubeActivity.m; sourceTree = "<group>"; };
-		0F5399FD1BD7CE6000D95306 /* KMYouTubeActivity.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = KMYouTubeActivity.bundle; sourceTree = "<group>"; };
+		0F5399F01BD7C3E900D95306 /* JLYoutubeActivity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JLYoutubeActivity.h; sourceTree = "<group>"; };
+		0F5399F11BD7C3E900D95306 /* JLYoutubeActivity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JLYoutubeActivity.m; sourceTree = "<group>"; };
+		0F5399FD1BD7CE6000D95306 /* JLYoutubeActivity.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = JLYoutubeActivity.bundle; sourceTree = "<group>"; };
+		7ED85B061D3870F70066AF95 /* JLYoutubeActivity.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = JLYoutubeActivity.podspec; path = ../JLYoutubeActivity.podspec; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,9 +49,9 @@
 		0F5399C11BD7C39900D95306 = {
 			isa = PBXGroup;
 			children = (
-				0F3EA76F1C1D232B002FB8C3 /* KMYoutubeActivity.podspec */,
-				0F5399E41BD7C3E900D95306 /* KMYoutubeActivity */,
-				0F5399CC1BD7C39900D95306 /* KMYoutubeActivityDemo */,
+				7ED85B061D3870F70066AF95 /* JLYoutubeActivity.podspec */,
+				0F5399E41BD7C3E900D95306 /* JLYoutubeActivity */,
+				0F5399CC1BD7C39900D95306 /* JLYoutubeActivityDemo */,
 				0F5399CB1BD7C39900D95306 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -59,12 +59,12 @@
 		0F5399CB1BD7C39900D95306 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0F5399CA1BD7C39900D95306 /* KMYoutubeActivityDemo.app */,
+				0F5399CA1BD7C39900D95306 /* JLYoutubeActivityDemo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		0F5399CC1BD7C39900D95306 /* KMYoutubeActivityDemo */ = {
+		0F5399CC1BD7C39900D95306 /* JLYoutubeActivityDemo */ = {
 			isa = PBXGroup;
 			children = (
 				0F5399D01BD7C39900D95306 /* AppDelegate.h */,
@@ -77,7 +77,7 @@
 				0F5399DE1BD7C39900D95306 /* Info.plist */,
 				0F5399CD1BD7C39900D95306 /* Supporting Files */,
 			);
-			path = KMYoutubeActivityDemo;
+			path = JLYoutubeActivityDemo;
 			sourceTree = "<group>";
 		};
 		0F5399CD1BD7C39900D95306 /* Supporting Files */ = {
@@ -88,23 +88,23 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		0F5399E41BD7C3E900D95306 /* KMYoutubeActivity */ = {
+		0F5399E41BD7C3E900D95306 /* JLYoutubeActivity */ = {
 			isa = PBXGroup;
 			children = (
-				0F5399F01BD7C3E900D95306 /* KMYoutubeActivity.h */,
-				0F5399F11BD7C3E900D95306 /* KMYoutubeActivity.m */,
-				0F5399FD1BD7CE6000D95306 /* KMYouTubeActivity.bundle */,
+				0F5399F01BD7C3E900D95306 /* JLYoutubeActivity.h */,
+				0F5399F11BD7C3E900D95306 /* JLYoutubeActivity.m */,
+				0F5399FD1BD7CE6000D95306 /* JLYoutubeActivity.bundle */,
 			);
-			name = KMYoutubeActivity;
-			path = ../KMYoutubeActivity;
+			name = JLYoutubeActivity;
+			path = ../JLYoutubeActivity;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		0F5399C91BD7C39900D95306 /* KMYoutubeActivityDemo */ = {
+		0F5399C91BD7C39900D95306 /* JLYoutubeActivityDemo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0F5399E11BD7C39900D95306 /* Build configuration list for PBXNativeTarget "KMYoutubeActivityDemo" */;
+			buildConfigurationList = 0F5399E11BD7C39900D95306 /* Build configuration list for PBXNativeTarget "JLYoutubeActivityDemo" */;
 			buildPhases = (
 				0F5399C61BD7C39900D95306 /* Sources */,
 				0F5399C71BD7C39900D95306 /* Frameworks */,
@@ -114,9 +114,9 @@
 			);
 			dependencies = (
 			);
-			name = KMYoutubeActivityDemo;
+			name = JLYoutubeActivityDemo;
 			productName = KMYoutubeActivityDemo;
-			productReference = 0F5399CA1BD7C39900D95306 /* KMYoutubeActivityDemo.app */;
+			productReference = 0F5399CA1BD7C39900D95306 /* JLYoutubeActivityDemo.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -130,10 +130,13 @@
 				TargetAttributes = {
 					0F5399C91BD7C39900D95306 = {
 						CreatedOnToolsVersion = 7.0.1;
+						DevelopmentTeam = 6V6UAGM9A4;
+						DevelopmentTeamName = "Malang Studio Co. Ltd,";
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
-			buildConfigurationList = 0F5399C51BD7C39900D95306 /* Build configuration list for PBXProject "KMYoutubeActivityDemo" */;
+			buildConfigurationList = 0F5399C51BD7C39900D95306 /* Build configuration list for PBXProject "JLYoutubeActivityDemo" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -146,7 +149,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				0F5399C91BD7C39900D95306 /* KMYoutubeActivityDemo */,
+				0F5399C91BD7C39900D95306 /* JLYoutubeActivityDemo */,
 			);
 		};
 /* End PBXProject section */
@@ -156,9 +159,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0F3EA7701C1D232B002FB8C3 /* KMYoutubeActivity.podspec in Resources */,
+				7ED85B071D3870F70066AF95 /* JLYoutubeActivity.podspec in Resources */,
 				0F5399DD1BD7C39900D95306 /* LaunchScreen.storyboard in Resources */,
-				0F5399FE1BD7CE6000D95306 /* KMYouTubeActivity.bundle in Resources */,
+				0F5399FE1BD7CE6000D95306 /* JLYoutubeActivity.bundle in Resources */,
 				0F5399DA1BD7C39900D95306 /* Assets.xcassets in Resources */,
 				0F5399D81BD7C39900D95306 /* Main.storyboard in Resources */,
 			);
@@ -171,7 +174,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0F5399FC1BD7C3E900D95306 /* KMYoutubeActivity.m in Sources */,
+				0F5399FC1BD7C3E900D95306 /* JLYoutubeActivity.m in Sources */,
 				0F5399D51BD7C39900D95306 /* ViewController.m in Sources */,
 				0F5399D21BD7C39900D95306 /* AppDelegate.m in Sources */,
 				0F5399CF1BD7C39900D95306 /* main.m in Sources */,
@@ -284,11 +287,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = KMYoutubeActivityDemo/Info.plist;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = JLYoutubeActivityDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = Malang.KMYoutubeActivityDemo;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dalkomm.JLYoutubeActivityDemo;
+				PRODUCT_NAME = JLYoutubeActivityDemo;
 			};
 			name = Debug;
 		};
@@ -296,18 +300,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = KMYoutubeActivityDemo/Info.plist;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = JLYoutubeActivityDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = Malang.KMYoutubeActivityDemo;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dalkomm.JLYoutubeActivityDemo;
+				PRODUCT_NAME = JLYoutubeActivityDemo;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0F5399C51BD7C39900D95306 /* Build configuration list for PBXProject "KMYoutubeActivityDemo" */ = {
+		0F5399C51BD7C39900D95306 /* Build configuration list for PBXProject "JLYoutubeActivityDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0F5399DF1BD7C39900D95306 /* Debug */,
@@ -316,7 +321,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0F5399E11BD7C39900D95306 /* Build configuration list for PBXNativeTarget "KMYoutubeActivityDemo" */ = {
+		0F5399E11BD7C39900D95306 /* Build configuration list for PBXNativeTarget "JLYoutubeActivityDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0F5399E21BD7C39900D95306 /* Debug */,
