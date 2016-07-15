@@ -33,7 +33,7 @@ UIActivityViewController *activityViewController = [[UIActivityViewController al
 
 The MIT License (MIT)
 
-Copyright (c) 2016 JL
+Copyright (c) 2016 jangsy7883
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
