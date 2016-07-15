@@ -5,7 +5,7 @@ Pod::Spec.new do |s|
   s.homepage     = "https://github.com/jangsy7883/JLYoutubeActivity"
   s.license      = { :type => 'MIT', :file => 'LICENSE' }
   s.author       = { "hmhv" => "jangsy7883@gmail.com" }
-  s.source       = { :git => "https://github.com/jangsy7883/JLYoutubeActivity", :tag => s.version }
+  s.source       = { :git => "https://github.com/jangsy7883/JLYoutubeActivity.git", :tag => s.version }
   s.source_files = 'JLYoutubeActivity/*.{h,m}'
   s.resources = 'JLYoutubeActivity/*.bundle'
   s.requires_arc = true
