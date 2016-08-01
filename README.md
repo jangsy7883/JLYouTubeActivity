@@ -1,8 +1,8 @@
 # JLYouTubeActivity
 
-[![Version](https://img.shields.io/cocoapods/v/JLYouTubeActivity.svg?style=flat)](http://cocoadocs.org/docsets/JLYouTubeActivity)
-[![License](https://img.shields.io/cocoapods/l/JLYouTubeActivity.svg?style=flat)](http://cocoadocs.org/docsets/JLYouTubeActivity)
-[![Platform](https://img.shields.io/cocoapods/p/JLYouTubeActivity.svg?style=flat)](http://cocoadocs.org/docsets/JLYouTubeActivity)
+[![Version](https://img.shields.io/cocoapods/v/JLYoutubeActivity.svg?style=flat)](http://cocoadocs.org/docsets/JLYoutubeActivity)
+[![License](https://img.shields.io/cocoapods/l/JLYoutubeActivity.svg?style=flat)](http://cocoadocs.org/docsets/JLYoutubeActivity)
+[![Platform](https://img.shields.io/cocoapods/p/JLYoutubeActivity.svg?style=flat)](http://cocoadocs.org/docsets/JLYoutubeActivity)
 
 `JLYouTubeActivity` is a `UIActivity` subclass that provides an "YouTube" action to a `UIActivityViewController`.
 
