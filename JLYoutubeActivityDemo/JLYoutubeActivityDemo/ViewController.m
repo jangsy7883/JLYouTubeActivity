@@ -30,7 +30,7 @@
                                                                                          applicationActivities:@[[JLYoutubeActivity new]]];
     
     activityViewController.popoverPresentationController.barButtonItem = sender;
-    activityViewController.popoverPresentationController.sourceView = view
+    activityViewController.popoverPresentationController.sourceView = view;
     [self presentViewController:activityViewController animated:YES completion:nil];
 }
 
