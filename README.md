@@ -3,14 +3,15 @@
 [![Version](https://img.shields.io/cocoapods/v/JLYoutubeActivity.svg?style=flat)](http://cocoadocs.org/docsets/JLYoutubeActivity)
 [![License](https://img.shields.io/cocoapods/l/JLYoutubeActivity.svg?style=flat)](http://cocoadocs.org/docsets/JLYoutubeActivity)
 [![Platform](https://img.shields.io/cocoapods/p/JLYoutubeActivity.svg?style=flat)](http://cocoadocs.org/docsets/JLYoutubeActivity)
+[![Support](https://img.shields.io/badge/support-iOS%208+-blue.svg?style=flat)](https://www.apple.com/nl/ios/)
 
 `JLYouTubeActivity` is a `UIActivity` subclass that provides an "YouTube" action to a `UIActivityViewController`.
 
 ![JLYouTubeActivity screenshot](https://github.com/jangsy7883/JLYouTubeActivity/blob/master/ScreenShots/1.png?raw=true "JLYouTubeActivity screenshot")
 
-##Installation
+## Install
 JLYouTubeActivity is available on CocoaPods. Add to your Podfile:
-```bash
+```ruby
 pod 'JLYouTubeActivity'
 ```
 and run 
@@ -19,17 +20,14 @@ pod install
 ```
 
 ## Usage
-
-### Objective-C
-
-```objectivec
+```objc
 NSURL *URL = [NSURL URLWithString:@"https://youtu.be/_NMQl74qrR8"];
 
 JLYoutubeActivity *activity = [[JLYoutubeActivity alloc] init];
 UIActivityViewController *activityViewController = [[UIActivityViewController alloc] initWithActivityItems:@[URL] applicationActivities::@[activity]];
 ```
 
-##Licence 
+## Licence 
 
 The MIT License (MIT)
 
