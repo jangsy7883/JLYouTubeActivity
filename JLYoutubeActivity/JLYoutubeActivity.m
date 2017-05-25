@@ -11,114 +11,89 @@
 static NSString *YoutubeURLSchema = @"youtube://";
 //static NSString *YoutubeBaseURL = @"http://www.youtube.com/v/";
 static NSString *YoutubeBaseURL = @"youtube://watch?v=";
-@implementation JLYoutubeActivity
-{
-    NSURL *_URL;
-}
 
-- (NSString *)activityType
-{
+@interface JLYoutubeActivity ()
+
+@property (nonatomic, strong) NSURL *URL;;
+@end
+
+@implementation JLYoutubeActivity
+
+- (NSString *)activityType {
     return NSStringFromClass([self class]);
 }
 
-- (NSString *)activityTitle
-{
+- (NSString *)activityTitle {
     return @"YouTube";
 }
 
-- (UIImage *)activityImage
-{
-    if ([UIImage respondsToSelector:@selector(imageNamed:inBundle:compatibleWithTraitCollection:)])
-    {
+- (UIImage *)activityImage {
+    if ([UIImage respondsToSelector:@selector(imageNamed:inBundle:compatibleWithTraitCollection:)]) {
         return [UIImage imageNamed:@"JLYoutubeActivity.bundle/youtube" inBundle:[NSBundle bundleForClass:self.class] compatibleWithTraitCollection:nil];
     }
-    else
-    {
+    else {
         return [UIImage imageNamed:@"JLYoutubeActivity.bundle/youtube-7"];
     }
 }
 
-- (BOOL)canPerformWithActivityItems:(NSArray *)activityItems
-{
-    if ([[UIApplication sharedApplication] canOpenURL:[NSURL URLWithString:YoutubeURLSchema]] == YES)
-    {
-        for (id activityItem in activityItems)
-        {
+- (BOOL)canPerformWithActivityItems:(NSArray *)activityItems {
+    if ([[UIApplication sharedApplication] canOpenURL:[NSURL URLWithString:YoutubeURLSchema]] == YES) {
+        for (id activityItem in activityItems) {
             return [self isYouTubeURL:activityItem];
         }
     }
-    
     return NO;
 }
 
-- (void)prepareWithActivityItems:(NSArray *)activityItems
-{
-    for (id activityItem in activityItems)
-    {
-        if ([self isYouTubeURL:activityItem] == YES)
-        {
+- (void)prepareWithActivityItems:(NSArray *)activityItems {
+    for (id activityItem in activityItems) {
+        if ([self isYouTubeURL:activityItem] == YES) {
             NSString *videoIdentifier = [self videoIdentifierForUrl:activityItem];
             
-            if (videoIdentifier != nil)
-            {
-                _URL = [NSURL URLWithString:[YoutubeBaseURL stringByAppendingString:videoIdentifier]];
+            if (videoIdentifier != nil) {
+                self.URL = [NSURL URLWithString:[YoutubeBaseURL stringByAppendingString:videoIdentifier]];
                 break;
             }
         }
     }
 }
 
-- (void)performActivity
-{
-    /*
-    if ([[UIApplication sharedApplication] respondsToSelector:@selector(openURL:options:completionHandler:)])
-    {
-        [[UIApplication sharedApplication] openURL:_URL
+- (void)performActivity {
+    
+    if ([[UIApplication sharedApplication] respondsToSelector:@selector(openURL:options:completionHandler:)]) {
+        [[UIApplication sharedApplication] openURL:self.URL
                                            options:@{}
                                  completionHandler:^(BOOL success) {
                                      [self activityDidFinish:success];
                                  }];
     }
-    else
-    {
-        BOOL completed = [[UIApplication sharedApplication] openURL:_URL];
+    else {
+        BOOL completed = [[UIApplication sharedApplication] openURL:self.URL];
         [self activityDidFinish:completed];
     }
-     */
-    BOOL completed = [[UIApplication sharedApplication] openURL:_URL];
-    [self activityDidFinish:completed];
 }
 
-- (NSString*)videoIdentifierForUrl:(NSURL*)url
-{
-    if ([url isKindOfClass:[NSURL class]])
-    {
+- (NSString*)videoIdentifierForUrl:(NSURL*)url {
+    if ([url isKindOfClass:[NSURL class]]) {
         NSDictionary *parameters = [self queryParametersForURL:url];
-        
-        if (parameters[@"v"] != nil)
-        {
+        if (parameters[@"v"] != nil) {
             return parameters[@"v"];
         }
     }
     return nil;
 }
 
-- (BOOL)isYouTubeURL:(NSURL*)url
-{
-    if ([url isKindOfClass:[NSURL class]])
-    {
+- (BOOL)isYouTubeURL:(NSURL*)url {
+    if ([url isKindOfClass:[NSURL class]]) {
         NSDictionary *parameters = [self queryParametersForURL:url];
-        
-        if ([parameters[@"feature"] isEqualToString:@"youtu.be"])
-        {
+        if ([parameters[@"feature"] isEqualToString:@"youtu.be"]) {
             return YES;
         }
     }
     return NO;
 }
 
-- (NSDictionary*)queryParametersForURL:(NSURL*)url
-{
+- (NSDictionary*)queryParametersForURL:(NSURL*)url {
     NSMutableDictionary *params = [[NSMutableDictionary alloc] init];
     for (NSString *param in [[url query] componentsSeparatedByString:@"&"])
     {

@@ -1,63 +1,67 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F1017" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="9ZF-Uj-CiC">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="WgN-ip-UwA">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <scene sceneID="6Gl-tw-Y2J">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                <viewController id="NKV-Pj-RL9" customClass="ViewController" customModule="JLYoutubeActivityDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                        <viewControllerLayoutGuide type="top" id="d4S-1e-X8A"/>
+                        <viewControllerLayoutGuide type="bottom" id="n9r-7H-J3P"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <view key="view" contentMode="scaleToFill" id="Mrz-Aw-wh7">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iNp-Wc-efW">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IxU-a6-gup">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </webView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="iNp-Wc-efW" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="3Fd-IZ-Oa5"/>
-                            <constraint firstAttribute="trailing" secondItem="iNp-Wc-efW" secondAttribute="trailing" id="Jng-eZ-IGL"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="iNp-Wc-efW" secondAttribute="bottom" id="Ler-1W-z8w"/>
-                            <constraint firstItem="iNp-Wc-efW" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="eSa-SY-igc"/>
+                            <constraint firstAttribute="trailing" secondItem="IxU-a6-gup" secondAttribute="trailing" id="01C-YM-qXh"/>
+                            <constraint firstItem="IxU-a6-gup" firstAttribute="leading" secondItem="Mrz-Aw-wh7" secondAttribute="leading" id="T0H-K9-pPC"/>
+                            <constraint firstItem="n9r-7H-J3P" firstAttribute="top" secondItem="IxU-a6-gup" secondAttribute="bottom" id="xSA-JK-AXZ"/>
+                            <constraint firstItem="IxU-a6-gup" firstAttribute="top" secondItem="Mrz-Aw-wh7" secondAttribute="top" id="zDK-2Y-MXp"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="lMP-GN-OAF">
-                        <barButtonItem key="rightBarButtonItem" systemItem="action" id="IG5-TZ-d0L">
+                    <navigationItem key="navigationItem" id="yEP-Mb-7Yc">
+                        <barButtonItem key="rightBarButtonItem" systemItem="action" id="0Yg-k7-COY">
                             <connections>
-                                <action selector="pressedShareButton:" destination="BYZ-38-t0r" id="9a3-hF-OTb"/>
+                                <action selector="pressedShareButtonWithSender:" destination="NKV-Pj-RL9" id="ddB-0N-HQZ"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="webView" destination="iNp-Wc-efW" id="Rnv-yH-bze"/>
+                        <outlet property="webView" destination="IxU-a6-gup" id="SKr-zl-w6A"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sw9-65-Ab1" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="593" y="933"/>
         </scene>
         <!--Navigation Controller-->
-        <scene sceneID="aTH-UU-cch">
+        <scene sceneID="egz-m8-J5Z">
             <objects>
-                <navigationController id="9ZF-Uj-CiC" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="J2Q-yA-HAZ">
+                <navigationController id="WgN-ip-UwA" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="UC3-se-ZWd">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="juM-iK-xUC"/>
+                        <segue destination="NKV-Pj-RL9" kind="relationship" relationship="rootViewController" id="3XS-5O-dPY"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Pes-rN-jXb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="n0W-yE-0fi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-107" y="933"/>
         </scene>

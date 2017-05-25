@@ -12,9 +12,6 @@
 		EFE42DD71ED67F8200F1A49E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFE42DD51ED67F8200F1A49E /* Main.storyboard */; };
 		EFE42DD91ED67F8200F1A49E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFE42DD81ED67F8200F1A49E /* Assets.xcassets */; };
 		EFE42DDC1ED67F8200F1A49E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFE42DDA1ED67F8200F1A49E /* LaunchScreen.storyboard */; };
-		EFE42DF41ED6851A00F1A49E /* JLYoutubeActivity.bundle in Resources */ = {isa = PBXBuildFile; fileRef = EFE42DF01ED6851A00F1A49E /* JLYoutubeActivity.bundle */; };
-		EFE42DF51ED6851A00F1A49E /* JLYoutubeActivity.m in Sources */ = {isa = PBXBuildFile; fileRef = EFE42DF21ED6851A00F1A49E /* JLYoutubeActivity.m */; };
-		EFE42DF61ED6851A00F1A49E /* JLYoutubeActivity.podspec in Resources */ = {isa = PBXBuildFile; fileRef = EFE42DF31ED6851A00F1A49E /* JLYoutubeActivity.podspec */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,11 +22,6 @@
 		EFE42DD81ED67F8200F1A49E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EFE42DDB1ED67F8200F1A49E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EFE42DDD1ED67F8200F1A49E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EFE42DE31ED67F9D00F1A49E /* JLYoutubeActivityDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JLYoutubeActivityDemo-Bridging-Header.h"; sourceTree = "<group>"; };
-		EFE42DF01ED6851A00F1A49E /* JLYoutubeActivity.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = JLYoutubeActivity.bundle; sourceTree = "<group>"; };
-		EFE42DF11ED6851A00F1A49E /* JLYoutubeActivity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JLYoutubeActivity.h; sourceTree = "<group>"; };
-		EFE42DF21ED6851A00F1A49E /* JLYoutubeActivity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JLYoutubeActivity.m; sourceTree = "<group>"; };
-		EFE42DF31ED6851A00F1A49E /* JLYoutubeActivity.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = JLYoutubeActivity.podspec; path = ../JLYoutubeActivity.podspec; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,11 +38,8 @@
 		EFE42DC51ED67F8200F1A49E = {
 			isa = PBXGroup;
 			children = (
-				EFE42DF31ED6851A00F1A49E /* JLYoutubeActivity.podspec */,
-				EFE42DEF1ED6851A00F1A49E /* JLYoutubeActivity */,
 				EFE42DD01ED67F8200F1A49E /* JLYoutubeActivityDemo */,
 				EFE42DCF1ED67F8200F1A49E /* Products */,
-				EFE42DE31ED67F9D00F1A49E /* JLYoutubeActivityDemo-Bridging-Header.h */,
 			);
 			sourceTree = "<group>";
 		};
@@ -73,17 +62,6 @@
 				EFE42DDD1ED67F8200F1A49E /* Info.plist */,
 			);
 			path = JLYoutubeActivityDemo;
-			sourceTree = "<group>";
-		};
-		EFE42DEF1ED6851A00F1A49E /* JLYoutubeActivity */ = {
-			isa = PBXGroup;
-			children = (
-				EFE42DF01ED6851A00F1A49E /* JLYoutubeActivity.bundle */,
-				EFE42DF11ED6851A00F1A49E /* JLYoutubeActivity.h */,
-				EFE42DF21ED6851A00F1A49E /* JLYoutubeActivity.m */,
-			);
-			name = JLYoutubeActivity;
-			path = ../JLYoutubeActivity;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -118,8 +96,6 @@
 				TargetAttributes = {
 					EFE42DCD1ED67F8200F1A49E = {
 						CreatedOnToolsVersion = 8.3.2;
-						DevelopmentTeam = SCHCN3R38K;
-						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -147,8 +123,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EFE42DF61ED6851A00F1A49E /* JLYoutubeActivity.podspec in Resources */,
-				EFE42DF41ED6851A00F1A49E /* JLYoutubeActivity.bundle in Resources */,
 				EFE42DDC1ED67F8200F1A49E /* LaunchScreen.storyboard in Resources */,
 				EFE42DD91ED67F8200F1A49E /* Assets.xcassets in Resources */,
 				EFE42DD71ED67F8200F1A49E /* Main.storyboard in Resources */,
@@ -164,7 +138,6 @@
 			files = (
 				EFE42DD41ED67F8200F1A49E /* ViewController.swift in Sources */,
 				EFE42DD21ED67F8200F1A49E /* AppDelegate.swift in Sources */,
-				EFE42DF51ED6851A00F1A49E /* JLYoutubeActivity.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,15 +260,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CLANG_ENABLE_MODULES = YES;
-				DEVELOPMENT_TEAM = SCHCN3R38K;
 				INFOPLIST_FILE = JLYoutubeActivityDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = JLSeries.JLYoutubeActivityDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "JLYoutubeActivityDemo-Bridging-Header.h";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -304,14 +272,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CLANG_ENABLE_MODULES = YES;
-				DEVELOPMENT_TEAM = SCHCN3R38K;
 				INFOPLIST_FILE = JLYoutubeActivityDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = JLSeries.JLYoutubeActivityDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "JLYoutubeActivityDemo-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -335,7 +299,6 @@
 				EFE42DE21ED67F8200F1A49E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
