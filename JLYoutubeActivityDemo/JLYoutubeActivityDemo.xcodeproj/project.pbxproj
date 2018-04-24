@@ -13,8 +13,8 @@
 		EFE42DD91ED67F8200F1A49E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFE42DD81ED67F8200F1A49E /* Assets.xcassets */; };
 		EFE42DDC1ED67F8200F1A49E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFE42DDA1ED67F8200F1A49E /* LaunchScreen.storyboard */; };
 		EFE42DF41ED6851A00F1A49E /* JLYoutubeActivity.bundle in Resources */ = {isa = PBXBuildFile; fileRef = EFE42DF01ED6851A00F1A49E /* JLYoutubeActivity.bundle */; };
-		EFE42DF51ED6851A00F1A49E /* JLYoutubeActivity.m in Sources */ = {isa = PBXBuildFile; fileRef = EFE42DF21ED6851A00F1A49E /* JLYoutubeActivity.m */; };
 		EFE42DF61ED6851A00F1A49E /* JLYoutubeActivity.podspec in Resources */ = {isa = PBXBuildFile; fileRef = EFE42DF31ED6851A00F1A49E /* JLYoutubeActivity.podspec */; };
+		EFE8533D208F025C00859E98 /* JLYoutubeActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE8533C208F025C00859E98 /* JLYoutubeActivity.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,11 +25,9 @@
 		EFE42DD81ED67F8200F1A49E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EFE42DDB1ED67F8200F1A49E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EFE42DDD1ED67F8200F1A49E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EFE42DE31ED67F9D00F1A49E /* JLYoutubeActivityDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JLYoutubeActivityDemo-Bridging-Header.h"; sourceTree = "<group>"; };
 		EFE42DF01ED6851A00F1A49E /* JLYoutubeActivity.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = JLYoutubeActivity.bundle; sourceTree = "<group>"; };
-		EFE42DF11ED6851A00F1A49E /* JLYoutubeActivity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JLYoutubeActivity.h; sourceTree = "<group>"; };
-		EFE42DF21ED6851A00F1A49E /* JLYoutubeActivity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JLYoutubeActivity.m; sourceTree = "<group>"; };
 		EFE42DF31ED6851A00F1A49E /* JLYoutubeActivity.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = JLYoutubeActivity.podspec; path = ../JLYoutubeActivity.podspec; sourceTree = "<group>"; };
+		EFE8533C208F025C00859E98 /* JLYoutubeActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JLYoutubeActivity.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,7 +48,6 @@
 				EFE42DEF1ED6851A00F1A49E /* JLYoutubeActivity */,
 				EFE42DD01ED67F8200F1A49E /* JLYoutubeActivityDemo */,
 				EFE42DCF1ED67F8200F1A49E /* Products */,
-				EFE42DE31ED67F9D00F1A49E /* JLYoutubeActivityDemo-Bridging-Header.h */,
 			);
 			sourceTree = "<group>";
 		};
@@ -79,8 +76,7 @@
 			isa = PBXGroup;
 			children = (
 				EFE42DF01ED6851A00F1A49E /* JLYoutubeActivity.bundle */,
-				EFE42DF11ED6851A00F1A49E /* JLYoutubeActivity.h */,
-				EFE42DF21ED6851A00F1A49E /* JLYoutubeActivity.m */,
+				EFE8533C208F025C00859E98 /* JLYoutubeActivity.swift */,
 			);
 			name = JLYoutubeActivity;
 			path = ../JLYoutubeActivity;
@@ -113,13 +109,13 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0830;
+				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = Woody;
 				TargetAttributes = {
 					EFE42DCD1ED67F8200F1A49E = {
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = SCHCN3R38K;
-						LastSwiftMigration = 0830;
+						LastSwiftMigration = 0930;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -164,7 +160,7 @@
 			files = (
 				EFE42DD41ED67F8200F1A49E /* ViewController.swift in Sources */,
 				EFE42DD21ED67F8200F1A49E /* AppDelegate.swift in Sources */,
-				EFE42DF51ED6851A00F1A49E /* JLYoutubeActivity.m in Sources */,
+				EFE8533D208F025C00859E98 /* JLYoutubeActivity.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -200,15 +196,23 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -250,15 +254,23 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -294,9 +306,10 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = JLSeries.JLYoutubeActivityDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "JLYoutubeActivityDemo-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -311,8 +324,9 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = JLSeries.JLYoutubeActivityDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "JLYoutubeActivityDemo-Bridging-Header.h";
-				SWIFT_VERSION = 3.0;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
