@@ -13,16 +13,16 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-                    
-        webView.loadRequest(URLRequest(url: URL(string: "https://youtu.be/_NMQl74qrR8")!))
+        
+        if let url = URL(string: "https://youtu.be/_NMQl74qrR8") {
+            webView.loadRequest(URLRequest(url: url))
+        }
     }
 
-    @IBAction func pressedShareButton(sender: UIButton) {
-        
+    @IBAction func pressedShareButton(_ sender: Any) {        
         if let url : URL = webView.request?.url! {
             let activityViewController = UIActivityViewController(activityItems: [url], applicationActivities: [JLYoutubeActivity()])
             present(activityViewController, animated: true, completion: nil)
         }
     }
 }
-
